@@ -1,19 +1,23 @@
 import Entity from './Entity.js';
+import Go from './traits/Go.js';
+import Jump from './traits/Jump.js';
+import Velocity from './traits/Velocity.js';
 import {loadMainSprite} from './sprites.js';
 
-export function createP() {
+export function createD() {
        return loadMainSprite()
-	.then(sprite => {
-  	const main_p = new Entity();
+       .then(sprite => {
+       const dragon = new Entity();
+       dragon.size.set(14, 16);
+	
+      dragon.addTrait(new Go());
+      dragon.addTrait(new Jump());
+    //  dragon.addTrait(new Velocity());
 
-   main_p.draw = function drawMainP(context) {
-      sprite.draw('idle', context, this.post.x, this.post.y);
+      dragon.draw = function drawMainP(context) {
+      sprite.draw('idle', context, 0, 0);
    }
 
-   main_p.update = function updateMainP(deltaTime) {
-           this.post.x += this.vel.x * deltaTime;
-           this.post.y += this.vel.y * deltaTime;
-     }
-        return main_p;
+        return dragon;
 	});
-}
+     }

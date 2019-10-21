@@ -3,7 +3,7 @@ export default class Timer {
  let accuTime = 0;
  let lasTime = 0;
 
-  this.updateP = (time) => {
+  this.updateProxy = (time) => {
             accuTime += (time - lasTime) / 1000;
 
         while (accuTime > deltaTime)  {
@@ -18,7 +18,7 @@ export default class Timer {
 		}
 	}
         enqueue() {
-            requestAnimationFrame(this.updateP);
+            requestAnimationFrame(this.updateProxy);
 }
 
 
