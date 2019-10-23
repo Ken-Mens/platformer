@@ -1,16 +1,43 @@
 export function createBackgroundLayer(level, sprites) {
+	const tiles = level.tiles;
+	const resolver = level.tileCollider.tiles;
+
         const buffer = document.createElement('canvas');
-        buffer.width = 450;
+        buffer.width = 400;
         buffer.height = 400;
 
 	const context = buffer.getContext('2d');
 
-        level.tiles.forEach((tile, x, y) => {
-             sprites.drawTile(tile.name, context, x, y);
-	});
+	let startIDX;
+	let endIDX;
+
+	function redraw(drawFrom, drawTo) {
+		if (drawFrom === startIDX && drawTo === endIDX) {
+			return;
+        }
+
+	startIDX = drawFrom;
+	endIDX = drawTo;
+
+	   for (let x = startIDX; x <= endIDX; x++) {
+		const column = tiles.grid[x];
+		if (column) {
+		    column.forEach((tile, y) => {
+                    sprites.drawTile(tile.name, context, x - startIDX, y);
+		});
+   	    }
+	  }
+	}
 
         return function drawBackgroundLayer(context, camera) {
-           context.drawImage(buffer, -camera.post.x, -camera.post.y);
+	 const drawW = resolver.toIndex(camera.size.x);
+	 const drawFrom = resolver.toIndex(camera.post.x);
+	 const drawTo = drawFrom + drawW;
+	 redraw(drawFrom, drawTo);
+
+           context.drawImage(buffer,
+			  -camera.post.x % 16,
+			  -camera.post.y);
   };
 }
 export function createSpriteLayer(entities, width = 64, height = 64) {
@@ -65,5 +92,17 @@ export function creatColayer(level) {
    		context.stroke();
 		});
 		resolvedT.length = 0;
+	};
+}
+
+export function createCamLayer(cameraD) {
+	return function drawCam(context, fromCamera) {
+		context.strokeStyle = 'green';
+		context.beginPath();
+	        context.rect(
+	         	cameraD.post.x - fromCamera.post.x,
+                 	cameraD.post.y - fromCamera.post.y,
+                 	cameraD.size.x, cameraD.size.y);
+			context.stroke();
 	};
 }
