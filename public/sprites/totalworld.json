@@ -1,0 +1,24 @@
+{
+	"imageURL" : "/images/people.png",
+	"tileW": 16,
+	"tileH": 16,
+
+	"tiles": [
+	 {
+		"name": "ground",
+		"index": [1, 13]
+	 },
+ 	 {
+		"name": "sky",
+		"index": [35, 14]
+	},
+ 	 {
+		"name": "chests",
+		"index": [0, 10]
+	 },
+	 {
+		"name": "skulls",
+		"index": [5, 23]
+	 }
+       ]
+}
