@@ -1,4 +1,3 @@
-import Compositor from './Compositor.js';
 import TileCollider from './collider.js';
 import {Matrix} from './math.js';
 
@@ -28,3 +27,14 @@ export default class Level {
         });
     }
 }
+
+    class Compositor {
+           constructor() {
+           this.layers = [];
+           }
+       draw(context, camera) {
+           this.layers.forEach(layer => {
+                   layer(context, camera);
+       });
+     }
+  }
