@@ -2,13 +2,11 @@ import Timer from './timer.js';
 import Camera from './camera.js';
 import {loadLevel} from './loaders.js';
 import {createD} from './entities.js';
-import {creatColayer} from './layers.js';
 import {setupKeyboard} from './input.js';
-import {setupMouseC} from './debug.js';
+import {setupMouseC} from './mouse.js';
 
 const canvas = document.getElementById('screen');
 const context = canvas.getContext('2d');
-
 
 Promise.all([
     createD(),
@@ -18,7 +16,7 @@ Promise.all([
     const camera = new Camera();
     window.camera = camera;
 
-    dragon.post.set(64, 64);
+    dragon.post.set(50, 50);
 
     level.entities.add(dragon);
 
@@ -32,8 +30,6 @@ Promise.all([
            level.update(deltaTime);
 
            level.comp.draw(context, camera);
-
-           //dragon.vel.y += gravity * deltaTime;
 	}
    timer.start();
 });
