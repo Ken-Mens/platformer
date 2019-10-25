@@ -1,5 +1,5 @@
 export default class Resolver {
-         constructor(matrix, tileSize = 16) {
+         constructor(matrix, tileSize = 14) {
                 this.matrix = matrix;
                 this.tileSize = tileSize;
           }
