@@ -1,7 +1,6 @@
 import Entity from './Entity.js';
 import Go from './traits/Go.js';
 import Jump from './traits/Jump.js';
-import Velocity from './traits/Velocity.js';
 import {loadMainSprite} from './sprites.js';
 
 export function createD() {
@@ -12,7 +11,6 @@ export function createD() {
 	
       dragon.addTrait(new Go());
       dragon.addTrait(new Jump());
-    //  dragon.addTrait(new Velocity());
 
       dragon.draw = function drawMainP(context) {
       sprite.draw('idle', context, 0, 0);
