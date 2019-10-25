@@ -1,7 +1,6 @@
 import Keyboard from './KeyboardState.js';
 
 export function setupKeyboard(entity) {
-    const SPACE = 32;
     const input = new Keyboard();
 
     input.addMapping('Space', keyState => {
@@ -19,6 +18,5 @@ export function setupKeyboard(entity) {
     input.addMapping('ArrowLeft', keyState => {
         entity.go.dir = -keyState;
     });
-
     return input;
 }
