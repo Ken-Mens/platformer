@@ -16,7 +16,7 @@ Promise.all([
     const camera = new Camera();
     window.camera = camera;
 
-    dragon.post.set(50, 50);
+    dragon.post.set(20, 20);
 
     level.entities.add(dragon);
 
@@ -33,3 +33,4 @@ Promise.all([
 	}
    timer.start();
 });
+
