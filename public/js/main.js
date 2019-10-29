@@ -1,4 +1,4 @@
-import Timer from './timer.js';
+import Timer from "./timer.js";
 import Camera from './camera.js';
 import {loadLevel} from './loaders.js';
 import {createD} from './entities.js';
@@ -28,6 +28,10 @@ Promise.all([
    const timer = new Timer(1/60);
    timer.update = function update(deltaTime) {
            level.update(deltaTime);
+	
+	if (dragon.post.x > 110) {
+		camera.post.x = dragon.post.x - 110;
+	}
 
            level.comp.draw(context, camera);
 	}
