@@ -1,0 +1,18 @@
+{
+	"imageURL" : "/images/people.png",
+
+	"frames": [
+	    {
+		"name": "idle",
+		"rect": [195, 100, 46, 46]
+	    },
+	   {
+		"name": "run1",
+		"rect": [242, 100, 46, 46]
+	   },
+	      {
+		"name": "run2",
+		"rect": [290, 100, 46, 46]
+	      }
+		]
+}
