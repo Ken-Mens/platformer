@@ -3,8 +3,8 @@ export function createBackgroundLayer(level, sprites) {
 	const resolver = level.tileCollider.tiles;
 
         const buffer = document.createElement('canvas');
-        buffer.width = 400 + 40;
-        buffer.height = 400;
+        buffer.width = 500 + 100;
+        buffer.height = 500;
 
 	const context = buffer.getContext('2d');
 

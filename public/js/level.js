@@ -3,7 +3,7 @@ import {Matrix} from './math.js';
 
 export default class Level {
 	constructor () {
-	this.gravity = 2000;
+	this.gravity = 4000;
 
 	this.comp = new Compositor();
 	this.entities = new Set();
