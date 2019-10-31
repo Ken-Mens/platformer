@@ -23,7 +23,7 @@ Promise.all([
   const input = setupKeyboard(dragon);
   input.listenTo(window);
 
-   setupMouseC(canvas, dragon, camera);
+//   setupMouseC(canvas, dragon, camera);
 
    const timer = new Timer(1/60);
    timer.update = function update(deltaTime) {
