@@ -37,7 +37,8 @@ body {
 	font-style: italic;
 }
 #showcase p{
-	font-size:20px;
+	font-size:22px;
+	font-style: bold;
 }
 
 #showcase  div{
@@ -71,6 +72,13 @@ body {
 	text-align:center;
 }
 
+#section-d{
+	background: #EEF4F9;
+	padding:20px;
+	padding:20px;
+	text-align:center;
+}
+
 #section-c div{
 	padding:20px;
 }
@@ -79,7 +87,15 @@ body {
 	display:flex;
    }
 
-#section-c .box1, #section-c .box3{
+#section-c .box1{
 	background:#557DA5;
 	color:#fff;
+}
+
+
+#section-c .box3 {
+	color:#fff;
+	background:#557DA5;
+	font: italic bold 12px/30px Georgia, serif;
+
 }
