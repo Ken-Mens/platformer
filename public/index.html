@@ -14,7 +14,7 @@
 	    <header id="showcase">
 		<h1>Welcome To DragonQuest</h1>
 		<h2> "A different take on a classic game"</h2>
-		<p> This platformer is inspired by the original Super Mario made in 1985 by Nintendo. Take control of a dragon character who must traverse the level safely. Use the left and right arrow to navivate across as well as the space bar to jump/fly.</p>
+		<p> This platformer is inspired by the original Super Mario made in 1985 by Nintendo. Take control of a dragon called Elliot who must traverse the level safely and avoid obstacles. Use the left and right arrow to navivate across as well as the space bar to jump/fly.</p>
 
 		<a href="https://en.wikipedia.org/wiki/Super_Mario_Bros." class="button">Read More</a>
 	    </header>
@@ -29,21 +29,21 @@
 		<section id="section-a">
 		<h1> Feature: Collision Detection </h1>
 		<img src="../images/collision.png" alt="Collision" width="300" height="100">
-		<p> Lorem ipsum dolor sit amet, consectetur adipisciing elit.Fugit minus impedit maxime, quae soluta quis cumque perferendis! Doloribus quaerat, placeat iste facere, asperator ex cum veritatis laundantium, officia, non porro exercitationem incidunt quis dolore? Officia ex accusamus expedita optio, voluptatem minus? In maiores omnis aperiam eaurum ab molestiae.
+		<p> Tile Collision is tricky concept to make the computer understand. We must first define the tiles so that our dragon character doesn't fall off the map as soon as it is loaded. So the ground, sky, and obstacle tiles must be defined. Then comes the fact that our character is going to be in motion so the environment must never prevent it from moving across. Therefore the x and y axis of our intrepid dragon Elliot must be tracked at all times so that it matches the "ground" tiles and handles smoothly.
 	</p>
 	</section>
 
 	<section id="section-b">
 		<h1> Feature: Keyboard Input </h1>
 		<img src="../images/keyboard.png" alt="Collision" width="300" height="100">
-		<p> Lorem ipsum dolor sit amet, consectetur adipisciing elit.Fugit minus impedit maxime, quae soluta quis cumque perferendis! Doloribus quaerat, placeat iste facere, asperator ex cum veritatis laundantium, officia, non porro exercitationem incidunt quis dolore? Officia ex accusamus expedita optio, voluptatem minus? In maiores omnis aperiam eaurum ab molestiae.
+		<p> Keyboard input consist of handling user input and translating it to action on screen. Elliot the dragon moves left, right, and up so the appropiate keys are the left & right arrow keys and the space bar for jumping/flying. The first step is to instruct the computer when a key has been pressed or released. The function listenTo was created to handle this condition, so that whenever a key is being pressed the computer listens to those events as 'keydown' and 'keyup'. The second step was to define the keys being pressed as I want specify which keys that are being listened to. The great part about the newer version of Javascript is that I can easily define the keys with keywords 'Space', 'ArrowRight' and 'ArrowLeft'. From there I mapped the three keys and return input depending on the key status being pressed or released.
 	        </p>
 		</section>
 
 	<section id="section-d">
 		<h1> Feature: Sprite Animation </h1>
-		<img src="../images/animation.png" alt="Collision" width="300" height="100">
-		<p> Lorem ipsum dolor sit amet, consectetur adipisciing elit.Fugit minus impedit maxime, quae soluta quis cumque perferendis! Doloribus quaerat, placeat iste facere, asperator ex cum veritatis laundantium, officia, non porro exercitationem incidunt quis dolore? Officia ex accusamus expedita optio, voluptatem minus? In maiores omnis aperiam eaurum ab molestiae.
+		<img src="../images/animation.png" alt="Animation" width="300" height="100">
+		<p> Elliot the dragon is a character sprite  derived from a spritesheet with 16*16 pixels. However to bring him to life, I needed several positions to create the sense of motion. There's the inital contact position the recoil and passing steps of animation. I "recovered" those positions from the spritesheet by defining each position in a json file under frames. That is the goal here to mimic movement every frame per second. Elliot was given traits so that his actions consisted of walking and jumping. To animate these actions I've made it so that Elliot accelerates and decelerates based on velocity and time.
 </p>
 </section>
 
