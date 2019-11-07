@@ -12,7 +12,7 @@ This project was handled by Kenneth Mensah, taking charge of the front end and b
 * **Kenneth Mensah** [@Kmens5](https://twitter.com/Kmens5) - Aspiring software engineer.
 
 ## Blog posts
-Looking back at the project, I wrote a blog describing the entire process, challenges faced and things that I learned.
+Looking back at the project, I wrote a blog describing the entire process, challenges faced and things that I learned along the way.
 * Kenneth Mensah : [DragonQuest: making of a video game](https://medium.com/@kenneth.mensah/my-experience-making-a-video-game-47daaaf4edb7)
    ____
 
@@ -35,3 +35,11 @@ Looking back at the project, I wrote a blog describing the entire process, chall
 
 [![CC0](https://licensebuttons.net/p/zero/1.0/88x31.png)](https://creativecommons.org/publicdomain/zero/1.0/)
 To the furthest extent of the law, [Kenneth Mensah](https://dragonyquest.herokuapp.com/) has waived copyright and related or neighboring rights to this work.
+
+## Acknowledgements
+
+* [Holberton School](https://www.holbertonschool.com/) (Staff and Peers)
+
+* Libraries
+
+* Meth Meth Method Tutorials for Javascript Game
