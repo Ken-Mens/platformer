@@ -4,7 +4,16 @@
    ___
 
    ## Introduction
-  Dragonquest is a platformer game I created that is heavily inspired by the original Super Mario Bros made by Nintendo. This project represents my first forray in game development. The reasoning behind this was to build a platformer game that had all of the fundamentals users typically expects out of the game type. Check it for yourself on my landing page :  [Link to game](https://dragonyquest.herokuapp.com/)
+  Dragonquest is a platformer game I created that is heavily inspired by the original Super Mario Bros made by Nintendo. This project represents my first forray in game development. The reasoning behind this was to build a platformer game that had all of the fundamentals users typically expects out of the game type. To check out DragonQuest on my landing page:  [Link to game](https://dragonyquest.herokuapp.com/).
+
+  ## Team Member
+This project was handled by Kenneth Mensah, taking charge of the front end and back end.
+
+* **Kenneth Mensah** [@Kmens5](https://twitter.com/Kmens5) - Aspiring software engineer.
+
+## Blog posts
+Looking back at the project, I wrote a blog describing the entire process, challenges faced and things that I learned.
+* Kenneth Mensah : [DragonQuest: making of a video game](https://medium.com/@kenneth.mensah/my-experience-making-a-video-game-47daaaf4edb7)
    ____
 
    ## Description
