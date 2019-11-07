@@ -23,7 +23,6 @@ export default class SpriteSheet {
         }
 
     defineTile(name, x, y) {
-	
  	this.define(name, x * this.width, y * this.height, this.width, this.height);
 	}
          draw(name, context, x, y) {
@@ -31,8 +30,8 @@ export default class SpriteSheet {
              context.drawImage(buffer, x, y);
           }
        drawTile(name, context, x, y) {
-	const abel = x * this.width;
-	const kane = y * this.height;
- 	this.draw(name, context, abel, kane);
+	const param_w = x * this.width;
+	const param_h = y * this.height;
+ 	this.draw(name, context, param_w, param_h);
     }
 }
