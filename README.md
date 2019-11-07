@@ -17,14 +17,20 @@ Looking back at the project, I wrote a blog describing the entire process, chall
    ____
 
    ## Description
-   Developed in 1985 by Nintendo, the original Super Mario Bros still serves as a model template for all platformer games all these years later. Dragonquest is a game that seeks to build from that same mold. Written in Javascript, Dragonquest is an attempt to recreate the classic Nintendo game with a few twists here and there. I chose Javascript to challenge myself to write a full scale game in a new language. Another reason for Javascript is that it was the perfect language to run a single page web application, making it easy to deploy later on a Heroku server. The narrative plays a lonely dragon called Elliot who's trying to find his way back home but keeps finding himself in harm's way. He must traverse the level safely to the other side and jump over any obstacles, enemies he encouters along the way. The instructions for gameplay are simple: left and right arrow keys to move character left and right, and spacebar button to jump/fly.
+   Developed in 1985 by Nintendo, the original Super Mario Bros still serves as a model template for all platformer games all these years later. Dragonquest is a game that seeks to build from that same mold. Written in Javascript, Dragonquest is an attempt to recreate the classic Nintendo game with a few twists here and there. I chose Javascript to challenge myself to write a full scale game in a new language. Another reason for Javascript is that it was the perfect language to run a single page web application, making it easy to deploy later on a Heroku server. The narrative plays a lonely dragon called Elliot who's trying to find his way back home but keeps finding himself in harm's way. Perceived as threat soldiers, will harass you till your health drops to nothing. Elliot must traverse the level safely to the other side and jump over any obstacles, enemies he encouters along the way. Future iteration of DragonQuest will include moving enemy animations, dashboard for score and time, and health meter.
+
+## Instructions
+- left arrow key to move left.
+- right arrow key to move right.
+- spacebar to jump/fly
+- Once you've reached the cliff of skulls, you've reached the end.
   ____
 
   ## Installation
- To install DragonQuest: 
+ To install DragonQuest:
  - clone the repository
- - run ```sudo npm run start``` from cloned repository. The game runs on local server so you will be notified that locahost: 5000 is running after running the commnand. 
- - Certain features such as enemy animation is still not implemented.
+ - run ```sudo npm run start``` from cloned repository. The game runs on local server so you will be notified that locahost: 5000 is running.
+ - Certain features such as enemy animation will be implemented shortly.
  ___
 
  ## Contributor(s)
