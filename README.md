@@ -12,7 +12,8 @@ This project was handled by Kenneth Mensah, taking charge of the front end and b
 * **Kenneth Mensah** [@Kmens5](https://twitter.com/Kmens5) - Aspiring software engineer.
 
 ## Blog posts
-Looking back at the project, I wrote a blog describing the entire process, challenges faced and things that I learned along the way.
+Reflecting back on the result, I decided to write a blog detailing my process step by step, and the challenges I faced. I also point out hints and tools that I picked up along the way, as well as misconceptions I might have had at the beginning.
+
 * Kenneth Mensah : [DragonQuest: making of a video game](https://medium.com/@kenneth.mensah/my-experience-making-a-video-game-47daaaf4edb7)
    ____
 
@@ -22,7 +23,7 @@ Looking back at the project, I wrote a blog describing the entire process, chall
 ## Instructions
 - left arrow key to move left.
 - right arrow key to move right.
-- spacebar to jump/fly
+- spacebar to jump/fly over obstacles.
 - Once you've reached the cliff of skulls, you've reached the end.
   ____
 
