@@ -10,6 +10,7 @@
 This project was handled by Kenneth Mensah, taking charge of the front end and back end.
 
 * **Kenneth Mensah** [@Kmens5](https://twitter.com/Kmens5) - Aspiring software engineer.
+[LinkedIn](https://www.linkedin.com/in/kenneth-mensah-07612238/)
 
 ## Blog posts
 Reflecting back on the result, I decided to write a blog detailing my process step by step, and the challenges I faced. I also point out hints and tools that I picked up along the way, as well as misconceptions I might have had at the beginning.
